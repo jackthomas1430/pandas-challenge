@@ -1,18 +1,50 @@
-#Pandas Challenge-Module 4 
+#PyCity School Analysis
+
 ##Overview
-"In this assignment, you’ll create and manipulate Pandas DataFrames to analyze school and standardized test data.
 
-Background
-You are the new Chief Data Scientist for your city's school district. In this capacity, you'll be helping the school board and mayor make strategic decisions regarding future school budgets and priorities.
+    In this challenge, we analyzed a school district’s standardized test scores and identified obvious trends in school performance to help the school board with their strategic planning. To do so, we looked at the reading and math scores for every student across the 15 schools in the district. There are two datasets included in this analysis, “students_complete.csv” and “schools_complete.csv”. The “schools_complete.csv” dataset includes the basic school information split into the four columns: “School ID”, “school_name”, “type”, “size”(total # of students), and “budget”. The “students_complete.csv” contains the basic student information and their standardized test scores for both math and reading. The columns include: “Student ID”, “student_name”, “gender”, “grade”, “school_name”, “reading_score”, and “math_score”. These datasets were used to calculate the average test scores and the percentage of students passing (a score of 70 or higher is a passing grade). The data is then split into 7 buckets that allow us to identify key trends in school performance: District Summary, School Summary, Highest/Bottom Performing Schools (by % of Overall Passing), Scores by Grade, Scores by School Spending, Scores by Size, and Scores by School Type. 
 
-As a first task, you've been asked to analyze the district-wide standardized test results. You'll be given access to every student's math and reading scores, as well as various information on the schools they attend. Your task is to aggregate the data to showcase obvious trends in school performance."
 ##Files
- - "python_challenge": The main repo for both the PyBank and PyPoll challenges. The PyPoll challenge folder contains the main Python script for the election results analysis, a "Resources" folder containing the dataset, and an "Anaylsis" folder with the txt file containing the results. 
-    - "PyBank":the folder containing all files needed for the PyBank financial analysis 
-    -"PyPoll":the folder containing all files needed for the PyPoll election results analysis
+ - "pandas_challenge": The main repo for this challenge. 
+    - "PyCitySchools":Folder containng all files for the challenge
+    -"Resources" folder: contains the the csv filesused for the analysis 
+        -“students_complete.csv”: dataset with student information and test scores
+        -“schools_complete.csv”: dataset with basic school information
+    -"Results": contains images of all the results
+    -"PyCitySchools_Analysis.ipynb": the main script for analysis
+    
+##Instructions
+    1. Clone the repository to your local device using git clone https://github.com/jackthomas1430/pandas-challenge.git
+    2. Check that the “students_complete.csv” and “schools_complete.csv” is located in the "Resources" folder
+    3. Open ""PyCitySchools_Analysis.ipynb" 
+    4. Run all cells
+    
+##Results 
+![District Summary](pandas-challenge/PyCitySchools/Results/District_Summary.png)
+![School Summary](pandas-challenge/PyCitySchools/Results/School_Summary.png)
+![Highest Performing Schools (by % Overall Passing](pandas-challenge/PyCitySchools/Results/Highest_Performing_Schools.png)
+![Bottom Performing Schools (by % Overall Passing](pandas-challenge/PyCitySchools/Results/Bottom Performing Schools.png)
+![Math Scores by Grade](pandas-challenge/PyCitySchools/Results/Math_Scores_Grade.png)
+![Reading Scores by Grade](pandas-challenge/PyCitySchools/Results/Reading_Scores_Grade.png)
+![Scores by School Spending](pandas-challenge/PyCitySchools/Results/Scores_by_Spending.png)
+![Scores by School Size](pandas-challenge/PyCitySchools/Results/Scores_by_Size.png)
+![Scores by School Type](pandas-challenge/PyCitySchools/Results/Scores_by_Type.png)
+
+##Summary/Analysis 
+
+The summary results included in the report provide insight into three key factors that may potentially affect student performance: Size, Total Budget per Student, and School Type.  It total, the PyCity school district had 39,170 students across 15 schools and a total budget of $24,649,428. Across the entire district, 75% of the students passed math with an average score of 79, while 86% of students passed reading with an average score of 82. Overall, 65% of the students passed. 
+
+When the results are broken down by school size, the data suggest that the total number of students at a school may play an important role in performance. The average number of students at each school in the district was 2,611. Holden High School had the fewest at 427 students, and Bailey High School had the most at 4,976 students. The summary tables, “Highest Performing Schools (by % Overall Passing)” and “Bottom Performing Schools (by % Overall Passing)”, show that of the top 5 performing schools, only 1 school had more than 2,000 students, while all 5 of the bottom performing schools had more than 2,900 students. The “Scores by School Size” table places the schools into 3 groups: schools with less than 1,000 students (small), schools with 1,000-2,000 students (medium), and schools with 2,000-5,000 students (large). It shows that both the small and medium sized schools have much higher passing rates than the large schools. The drop off from 90% of students passing at small and medium sized schools to just 58% of students passing at large schools might indicate that once schools surpass more than 2,000 students their standardized test scores start to go down.   
+
+It may be considered that schools with more than 2,000 students experience worse test results because their total budget per student is smaller. However, the data does not show that to be the case. Furthermore, there is no clear indication that schools with a higher budget per student had a more successful passing rate. The data shows the opposite. The district had an average budget of $620 per student, with a relatively small gap between the largest budget at $655 per student, and the smallest at $578 per student. The top performing school, Cabrera High School, which had an overall passing rate of 91% had a budget of $582 per student, while all 5 of the bottom performing schools had a budget of more than $600 per student. Perhaps, this can be explained by the fact that the difference in spending across schools was minimal. However, it might also indicate that school structure and size are far bigger factors in student success than spending. 
+
+Finally, the data clearly shows that “charter” schools performed far better than “district” schools. “Charter” schools had an overall passing rate of 90%, while “district” schools had an overall passing rate of just 54%. Furthermore, all five of the top performing schools in the district were “charter” schools, while all 5 of the bottom performing schools were “district” schools. A further examination of school types and why “charter” schools perform better than “district” schools could help guide many decisions moving forward. 
+
+Ultimately, an evaluation of school type and size, and why these factors may lead to more successful standardized test scores should be a priority during strategic planning. 
+
 ##Acknowledgements
     
-    Xpert Learning Assistant was used to establish the framework and logic for this code, answer detailed questions, and assist in debugging. The framework and code were modified using course curriculum and activities to fit the requirements of the assignment.For more information about the Xpert Learning Assistant, visit [EdX Xpert Learning Assistant](https://www.edx.org/). 
+    Xpert Learning Assistant was used to answer detailed questions, and assist in debugging.The starter code provided was the base of the report and was modified using course curriculum and activities to fit the requirements of the assignment.For more information about the Xpert Learning Assistant, visit [EdX Xpert Learning Assistant](https://www.edx.org/). 
 
 ##References
 
