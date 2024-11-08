@@ -1,25 +1,25 @@
-#PyCity School Analysis
+# PyCity School Analysis
 
-##Overview
+## Overview
 
-    In this challenge, we analyze a school district’s standardized test scores and identify obvious trends in school performance to help the school board with their strategic planning. To do so, we look at the reading and math scores for every student across the 15 schools in the district. There are two datasets included in this analysis, “students_complete.csv” and “schools_complete.csv”. The “schools_complete.csv” dataset includes the basic school information split into the four columns: “School ID”, “school_name”, “type”, “size”(total # of students), and “budget”. The “students_complete.csv” contains the basic student information and their standardized test scores for both math and reading. The columns include: “Student ID”, “student_name”, “gender”, “grade”, “school_name”, “reading_score”, and “math_score”. These datasets are used to calculate the average test scores and the percentage of students passing (a score of 70 or higher is a passing grade). The data is then split into 7 buckets that allow us to identify key trends in school performance: District Summary, School Summary, Highest/Bottom Performing Schools (by % of Overall Passing), Scores by Grade, Scores by School Spending, Scores by Size, and Scores by School Type. 
+In this challenge, we analyze a school district’s standardized test scores and identify obvious trends in school performance to help the school board with their strategic planning. To do so, we look at the reading and math scores for every student across the 15 schools in the district. There are two datasets included in this analysis, “students_complete.csv” and “schools_complete.csv”. The “schools_complete.csv” dataset includes the basic school information split into the four columns: “School ID”, “school_name”, “type”, “size”(total # of students), and “budget”. The “students_complete.csv” contains the basic student information and their standardized test scores for both math and reading. The columns include: “Student ID”, “student_name”, “gender”, “grade”, “school_name”, “reading_score”, and “math_score”. These datasets are used to calculate the average test scores and the percentage of students passing (a score of 70 or higher is a passing grade). The data is then split into 7 buckets that allow us to identify key trends in school performance: District Summary, School Summary, Highest/Bottom Performing Schools (by % of Overall Passing), Scores by Grade, Scores by School Spending, Scores by Size, and Scores by School Type. 
 
-##Files
+## 
  - "pandas_challenge": The main repo for this challenge. 
     - "PyCitySchools":Folder containng all files for the challenge
-    -"Resources" folder: contains the the csv files used for the analysis 
-        -“students_complete.csv”: dataset with student information and test scores
-        -“schools_complete.csv”: dataset with basic school information
-    -"Results": contains images of all the results
-    -"PyCitySchools_Analysis.ipynb": the main script for analysis
-    
-##Instructions
+    - "Resources" folder: contains the the csv files used for the analysis 
+        - “students_complete.csv”: dataset with student information and test scores
+        - “schools_complete.csv”: dataset with basic school information
+    - "Results": contains images of all the results
+    - "PyCitySchools_Analysis.ipynb": the main script for analysis
+     
+## Instructions
     1. Clone the repository to your local device using git clone https://github.com/jackthomas1430/pandas-challenge.git
     2. Check that “students_complete.csv” and “schools_complete.csv” is located in the "Resources" folder
     3. Open ""PyCitySchools_Analysis.ipynb" 
     4. Run all cells
     
-##Results 
+## Results 
 ![District Summary](pandas-challenge/PyCitySchools/Results/District_Summary.png)
 ![School Summary](pandas-challenge/PyCitySchools/Results/School_Summary.png)
 ![Highest Performing Schools (by % Overall Passing](pandas-challenge/PyCitySchools/Results/Highest_Performing_Schools.png)
@@ -30,7 +30,7 @@
 ![Scores by School Size](pandas-challenge/PyCitySchools/Results/Scores_by_Size.png)
 ![Scores by School Type](pandas-challenge/PyCitySchools/Results/Scores_by_Type.png)
 
-##Summary/Analysis 
+## Summary/Analysis 
 
 The summary results included in the report provide insight into three key factors that may potentially affect student performance: Size, Total Budget per Student, and School Type. In total, the PyCity school district has 39,170 students across 15 schools and a total budget of $24,649,428. Across the entire district, 75% of the students passed math with an average score of 79, while 86% of students passed reading with an average score of 82. Overall, 65% of the students passed. 
 
@@ -42,11 +42,11 @@ Finally, the data clearly shows that “charter” schools performed far better 
 
 Ultimately, an evaluation of school type and size, and why these factors may lead to more successful standardized test scores should be a priority during strategic planning. 
 
-##Acknowledgements
+## Acknowledgements
     
     Xpert Learning Assistant was used to answer detailed questions, and assist in debugging.The starter code provided was the base of the report and was modified using course curriculum and activities to fit the requirements of the assignment.For more information about the Xpert Learning Assistant, visit [EdX Xpert Learning Assistant](https://www.edx.org/). 
 
-##References
+## References
 
 Data for this dataset was generated by edX Boot Camps LLC
 
