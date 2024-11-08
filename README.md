@@ -4,14 +4,11 @@
 
 In this challenge, we analyze a school district’s standardized test scores and identify obvious trends in school performance to help the school board with their strategic planning. To do so, we look at the reading and math scores for every student across the 15 schools in the district. There are two datasets included in this analysis, “students_complete.csv” and “schools_complete.csv”. The “schools_complete.csv” dataset includes the basic school information split into the four columns: “School ID”, “school_name”, “type”, “size”(total # of students), and “budget”. The “students_complete.csv” contains the basic student information and their standardized test scores for both math and reading. The columns include: “Student ID”, “student_name”, “gender”, “grade”, “school_name”, “reading_score”, and “math_score”. These datasets are used to calculate the average test scores and the percentage of students passing (a score of 70 or higher is a passing grade). The data is then split into 7 buckets that allow us to identify key trends in school performance: District Summary, School Summary, Highest/Bottom Performing Schools (by % of Overall Passing), Scores by Grade, Scores by School Spending, Scores by Size, and Scores by School Type. 
 
-## 
- - "pandas_challenge": The main repo for this challenge. 
-    - "PyCitySchools":Folder containng all files for the challenge
-    - "Resources" folder: contains the the csv files used for the analysis 
-        - “students_complete.csv”: dataset with student information and test scores
-        - “schools_complete.csv”: dataset with basic school information
-    - "Results": contains images of all the results
-    - "PyCitySchools_Analysis.ipynb": the main script for analysis
+## File Structure
+
+Here's an overview of the file structure:
+
+pandas_challenge/ # The main repo for this challenge ├── PyCitySchools/ # Folder containing all files for the challenge │ ├── Resources/ # Contains the CSV files used for the analysis │ │ ├── students_complete.csv # Dataset with student information and test scores │ │ └── schools_complete.csv # Dataset with basic school information │ ├── Results/ # Contains images of all the results │ └── PyCitySchools_Analysis.ipynb # Main script for analysis
      
 ## Instructions
     1. Clone the repository to your local device using git clone https://github.com/jackthomas1430/pandas-challenge.git
