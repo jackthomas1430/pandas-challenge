@@ -8,9 +8,10 @@ In this challenge, we analyze a school district’s standardized test scores and
 
 Here's an overview of the file structure:
 
-## File Structure
+pandas_challenge/ # The main repo for this challenge ├── PyCitySchools/ # Folder containing all files for the challenge │ ├── Resources/ # Contains the CSV files used for the analysis │ │ ├── students_complete.csv # Dataset with student information and test scores │ │ └── schools_complete.csv # Dataset with basic school information │ ├── Results/ # Contains images of all the results │ └── PyCitySchools_Analysis.ipynb # Main script for analysis
 
-Here's an overview of the file structure:
+
+
 
 
      
