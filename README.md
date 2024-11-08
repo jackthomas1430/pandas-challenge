@@ -7,7 +7,7 @@ In this challenge, we analyze a school district’s standardized test scores and
 ## File Structure
 
 Here's an overview of the file structure:
-
+```
 pandas_challenge/                    # The main repo for this challenge
 ├── PyCitySchools/                   # Folder containing all files for the challenge
 │   ├── Resources/                   # Contains the CSV files used for the analysis
@@ -15,7 +15,7 @@ pandas_challenge/                    # The main repo for this challenge
 │   │   └── schools_complete.csv     # Dataset with basic school information
 │   ├── Results/                     # Contains images of all the results
 │   └── PyCitySchools_Analysis.ipynb # Main script for analysis
-
+```
 ## Instructions
     1. Clone the repository to your local device using git clone https://github.com/jackthomas1430/pandas-challenge.git
     2. Check that “students_complete.csv” and “schools_complete.csv” is located in the "Resources" folder
